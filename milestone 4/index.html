@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Editable Resume -->
+        <section id="editable-resume">
+            <h1 contenteditable="true" id="display-name">Your Name</h1>
+            <img src="" alt="Profile Picture" id="display-pic" class="profile-pic" contenteditable="true">
+            <p contenteditable="true" id="display-email">Contact: your.email@gmail.com</p>
+            <button id="save-personal-info">Save Personal Info</button>
+
+            <section id="display-education">
+                <h2>Education</h2>
+                <p contenteditable="true" id="education-content">Your education details will appear here.</p>
+                <button id="save-education">Save Education</button>
+            </section>
+
+            <section id="display-skills">
+                <h2>Skills</h2>
+                <p contenteditable="true" id="skills-content">Your skills will appear here.</p>
+                <button id="save-skills">Save Skills</button>
+            </section>
+
+            <section id="display-work-experience">
+                <h2>Work Experience</h2>
+                <p contenteditable="true" id="work-experience-content">Your work experience will appear here.</p>
+                <button id="save-work-experience">Save Work Experience</button>
+            </section>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

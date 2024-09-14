@@ -1,0 +1,119 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the body and main container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 2px solid #3498db; /* Blue border */
+}
+
+/* Styling for headings */
+h1 {
+    color: #2c3e50; /* Dark blue color */
+    font-size: 36px;
+    border-bottom: 3px solid #3498db; /* Stylish border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2980b9; /* Blue color */
+    font-size: 24px;
+    margin-top: 30px;
+    border-bottom: 2px solid #2980b9; /* Underline style */
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Styling for profile picture */
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover;
+    margin: 0 auto 20px; /* Center align and margin */
+    display: block;
+    border: 5px solid #3498db; /* Blue border */
+}
+
+/* Styling for sections */
+section {
+    margin-bottom: 25px;
+}
+
+/* Shared styling for Education, Skills, and Work Experience sections */
+#education, #skills, #work-experience {
+    background-color: #ecf0f1; /* Light grey background */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #3498db; /* Blue border on the left side */
+}
+
+/* Styling for lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Buttons for interactivity */
+button {
+    background-color: #3498db; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
+
