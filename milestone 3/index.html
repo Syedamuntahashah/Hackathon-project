@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume Builder</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <!-- Form to collect resume information -->
-        <section id="form-section">
-            <h2>Fill in Your Resume Details</h2>
-            <form id="resume-form">
-                <!-- Personal Information -->
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email">
-                </div>
-                <div>
-                    <label for="profile-pic">Profile Picture URL:</label>
-                    <input type="text" id="profile-pic" placeholder="Enter image URL">
-                </div>
+  <div class="container">
+    <!-- Resume Form Section -->
+    <section id="form-section">
+      <h2>Fill in Your Resume Details</h2>
+      <form id="resume-form">
+        <div><label for="name">Name:</label><input type="text" id="name" placeholder="Enter your name" /></div>
+        <div><label for="email">Email:</label><input type="email" id="email" placeholder="Enter your email" /></div>
+        <div><label for="profile-pic">Profile Picture URL:</label><input type="text" id="profile-pic" placeholder="Enter image URL" /></div>
+        <div><label for="education">Education:</label><textarea id="education" placeholder="Enter your education details"></textarea></div>
+        <div><label for="skills">Skills:</label><textarea id="skills" placeholder="Enter your skills (comma-separated)"></textarea></div>
+        <div><label for="work-experience">Work Experience:</label><textarea id="work-experience" placeholder="Enter your work experience"></textarea></div>
+        <button type="button" id="update-resume">Update Resume</button>
+      </form>
+    </section>
 
-                <!-- Education -->
-                <div>
-                    <label for="education">Education:</label>
-                    <textarea id="education" placeholder="Enter your education details"></textarea>
-                </div>
+    <!-- Resume Preview Section -->
+    <section id="resume-preview" style="display: none;">
+      <h1 id="preview-name"></h1>
+      <img id="preview-pic" class="profile-pic" src="" alt="Profile Picture" />
+      <p><strong>Email:</strong> <span id="preview-email"></span></p>
 
-                <!-- Skills -->
-                <div>
-                    <label for="skills">Skills:</label>
-                    <textarea id="skills" placeholder="Enter your skills"></textarea>
-                </div>
+      <div id="preview-education">
+        <h2>Education</h2>
+        <p></p>
+      </div>
 
-                <!-- Work Experience -->
-                <div>
-                    <label for="work-experience">Work Experience:</label>
-                    <textarea id="work-experience" placeholder="Enter your work experience"></textarea>
-                </div>
+      <div id="preview-skills">
+        <h2>Skills</h2>
+        <ul></ul>
+      </div>
 
-                <!-- Button to update resume -->
-                <button type="button" id="update-resume">Update Resume</button>
-            </form>
-        </section>
+      <div id="preview-work">
+        <h2>Work Experience</h2>
+        <p></p>
+      </div>
+    </section>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
